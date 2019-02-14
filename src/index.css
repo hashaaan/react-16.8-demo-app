@@ -6,9 +6,54 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0c1c29;
+  color: #fff;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.form {
+  justify-content: center;
+  padding: 20px;
+}
+
+.btn {
+  margin-left: 10px;
+  border: none;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: lightseagreen;
+  height: 40px;
+  /* width: 60px; */
+}
+
+.form label {
+  display: block;
+  padding: 5px;
+  font-size: 28px;
+}
+
+.form input {
+  margin-left: 10px;
+  height: 38px;
+  border: none;
+  border-radius: 4px;
+  padding-left: 5px;
+  font-size: 18px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.loader {
+  font-size: 24px;
+  color: lightgreen;
+  padding: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
