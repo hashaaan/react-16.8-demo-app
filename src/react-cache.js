@@ -21,15 +21,15 @@ function createResource(fn) {
 const myPokemon = createResource(fetchPokemon);
 
 function PokemonInfo({ pokemonName }) {
-  //const pokemon = myPokemon.read(pokemonName);
-  //const pokemon = { pokemonName };
-  const pokemon = cache[pokemonName];
-  if (!pokemon) {
-    const promise = fetchPokemon(pokemonName).then(
-      p => (cache[pokemonName] = p)
-    );
-    throw promise;
-  }
+  const pokemon = myPokemon.read(pokemonName);
+  // const pokemon = { pokemonName };
+  // const pokemon = cache[pokemonName];
+  // if (!pokemon) {
+  //   const promise = fetchPokemon(pokemonName).then(
+  //     p => (cache[pokemonName] = p)
+  //   );
+  //   throw promise;
+  // }
   return <pre>{JSON.stringify(pokemon || "Unknown", null, 2)}</pre>;
 }
 
